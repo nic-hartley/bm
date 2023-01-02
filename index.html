@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Userscripts!</title>
+  </head>
+  <body>
+    <h1>userscripts</h1>
+    <p>A collection of bookmarklets. Each has:</p>
+    <p>Autoupdates, so you get the latest version every time you run it</p>
+    <ul>
+      <li>Its full source code right here in this repo</li>
+      <li>No dependencies and simple, vanilla JS for rapid loading</li>
+    </ul>
+    <h2>Installation</h2>
+    <p>Each script has a "Bookmark me" link under the header. If you right-click that link, you should see an option to bookmark it. You can then run the bookmarklet from your bookmarks bar, and it should apply to whatever page you're looking at.</p>
+
+    <h1>CCdel</h1>
+    <p><a href="javascript:fetch%28%22https%3A%2F%2Fgithub.com%2Fnic-hartley%2Fuserscripts%2Fblob%2Frelease%2FREADME.md%22%29.then%28r%3D%3Er.body%28%29%29.then%28b%3D%3Eeval%28b%29%29">Bookmark me</a></p>
+    <p>Deletes the constant barrage of "(user) redeemed (n) Crowd Control Coins" from popular streams that use it. Doesn't touch any other messages, redeems, etc, just the Crowd Control ones.</p>
+    <p>The way this works is by finding and deleting them, around 10 times a second. Because of that you may see the messages flickering. This is fixable, but not without a *lot* more code that I just don't feel like writing. Sorry if it bothers you.</p>
+  </body>
+</html>
