@@ -1,5 +1,5 @@
 // bookmarklet source:
-// fetch("nic-hartley.github.io/bm/ccdel.js").then(r=>r.body()).then(b=>eval(b))
+// fetch("https://nic-hartley.github.io/bm/ccdel.js").then(r=>r.text()).then(b=>eval(b))
 (_=>{
   let deleted = 0;
   console.log("Running CCdel...");
