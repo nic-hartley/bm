@@ -12,6 +12,8 @@
     </ul>
     <h2>Installation</h2>
     <p>Each script has a "Bookmark me" link under the header. If you right-click that link, you should see an option to bookmark it. You can then run the bookmarklet from your bookmarks bar, and it should apply to whatever page you're looking at.</p>
+    <p>The source of each bookmarklet is in the applet's JS file, in a comment. It's turned into a bookmarklet with this JS snippet:</p>
+    <pre><code>alert(encodeURIComponent(prompt("The bookmarklet code:")).replaceAll('(', '%28').replaceAll(')', '%29'))</code></pre>
 
     <h1>CCdel</h1>
     <p><a href="javascript:fetch%28%22https%3A%2F%2Fgithub.com%2Fnic-hartley%2Fuserscripts%2Fblob%2Frelease%2FREADME.md%22%29.then%28r%3D%3Er.body%28%29%29.then%28b%3D%3Eeval%28b%29%29">Bookmark me</a></p>
