@@ -5,10 +5,12 @@
   console.log("Running CCdel...");
   setInterval(_ => {
     let deleted = 0;
-    document.querySelectorAll(".user-notice-line").forEach(e => {
+    document.querySelectorAll(".user-notice-line:not(.__ccdel-safe)").forEach(e => {
       if (e.innerText.includes("Crowd Control Coin")) {
         deleted += 1;
-        e.parentNode.removeChild(e);
+        e.style.display = 'none';
+      } else {
+        e.className += ' __ccdel-safe'
       }
     });
   }, 100);
