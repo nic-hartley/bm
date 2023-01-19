@@ -15,7 +15,7 @@
   }, 100);
   setInterval(_ => {
     if (deleted > 0) {
-      console.log(`CCdel: ${deleted} in the past 5 seconds`);
+      console.log(`CCdel: Deleted ${deleted} in the past 5 seconds`);
       deleted = 0;
     }
   }, 5000);
