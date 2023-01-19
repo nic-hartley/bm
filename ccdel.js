@@ -4,7 +4,6 @@
   let deleted = 0;
   console.log("CCdel: initializing");
   setInterval(_ => {
-    let deleted = 0;
     document.querySelectorAll(".user-notice-line:not(.__ccdel-safe)").forEach(e => {
       if (e.innerText.includes("Crowd Control Coin")) {
         deleted += 1;
